@@ -44,7 +44,7 @@ public class FlappyBird extends ApplicationAdapter {
 		bottomTube = new Texture("bottomtube.png");
 		maxTubeOffset = Gdx.graphics.getHeight() / 2 - tubeGap / 2 - 100;
 		gapGenerator = new Random();
-        distanceBetweenTubes = Gdx.graphics.getWidth() / 2;
+        distanceBetweenTubes = Gdx.graphics.getWidth() * 3 / 4;
 
         for (int i = 0; i < numTubes; i++) {
             tubeOffset[i] = (gapGenerator.nextFloat() - 0.5f) * maxTubeOffset;
