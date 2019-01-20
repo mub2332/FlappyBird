@@ -66,6 +66,10 @@ public class FlappyBird extends ApplicationAdapter {
             }
 
             for (int i = 0; i < numTubes; i++) {
+                if (tubeX[i] < -topTube.getWidth()) {
+                    tubeX[i] += numTubes * distanceBetweenTubes;
+                }
+
                 tubeX[i] -= tubeVelocity;
 
                 batch.draw(topTube,
